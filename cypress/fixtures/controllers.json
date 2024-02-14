@@ -1,0 +1,52 @@
+{
+    "controllers":{
+        "static":{
+            "logo":"img[src$='logo.png']",
+            "enterAccountInformation": "//b[text()='%s']",
+            "AccountDeleted":"//*[text()='Account Deleted!']"
+            
+        },
+        "button":{
+            "loginLink":"//*[@href='/login']",
+            "signUp":"//button[text()='Signup']",
+            "createAccount":"//button[contains(.,'Create Account')]",
+            "Continue":"//*[@id='form']//a[contains(.,'Continue')]",
+            "deleteAccount":"//*[@href='/delete_account' ]"
+        },
+        "text":{
+            "newUserSignUp":"//*[text()='New User Signup!']",
+            "accountCreated":"//*[text()='Account Created!']",
+            "loggedInAs":"//a[contains(.,'Logged in as ')]"
+        },
+        "input":
+        {
+            "name": "//*[@data-qa = 'signup-name']",
+            "email": "//*[@data-qa = 'signup-email']",
+            "title": "//*[@class = 'radio-inline' and contains(.,'Mr.')]//input ",
+            "password": "//*[@id='password']",
+            "newsletter":"#newsletter",
+            "firstName":"#first_name",
+            "lastName":"#last_name",
+            "company":"#company",
+            "address1":"#address1",
+            "state":"#state",
+            "city":"#city",
+            "zipcode":"#zipcode",
+            "mobileNumber":"#mobile_number"
+        },
+        "select":
+        {
+            "day":"#days",
+            "months":"#months",
+            "year":"#years",
+            "country":"#country"
+        },
+        "condition":{
+            "be.visible":"be.visible",
+            "have.text":"have.text"
+        },
+        "test":{
+            "loggedInAs":"//*[@id='form']//a[contains(.,'%s')]"
+        }
+    }
+}
